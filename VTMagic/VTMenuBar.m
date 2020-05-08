@@ -251,7 +251,7 @@ static NSInteger const kVTMenuBarTag = 1000;
 - (void)resetSliderForDefault {
     NSInteger index = 0;
     CGRect itemFrame = CGRectZero;
-    CGFloat sliderY = CGRectGetHeight(self.frame) - _sliderHeight + _sliderOffset;
+    CGFloat sliderY = CGRectGetHeight(self.frame) - _sliderHeight -8 + _sliderOffset;
     CGRect frame = CGRectMake(0, sliderY, 0, _sliderHeight);
     for (NSString *title in _menuTitles) {
         itemFrame = [self itemFrameAtIndex:index];
